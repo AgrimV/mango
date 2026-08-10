@@ -1110,7 +1110,6 @@ static bool tag_combo = false;
 static char cli_config_path[1024] = {0};
 static int active_capture_count = 0;
 static bool mod_key_used = false;
-static const char *cli_config_path = NULL;
 static bool cli_debug_log = false;
 static KeyMode keymode = {
 	.mode = {'d', 'e', 'f', 'a', 'u', 'l', 't', '\0'},
