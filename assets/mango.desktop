@@ -3,6 +3,6 @@ Encoding=UTF-8
 Name=Mango
 DesktopNames=mango;wlroots
 Comment=mango WM
-Exec=mango
+Exec=uwsm start mango
 Icon=mango
 Type=Application
