@@ -1119,7 +1119,6 @@ static bool tag_combo = false;
 static char cli_config_path[1024] = {0};
 static int active_capture_count = 0;
 static bool mod_key_used = false;
-static const char *cli_config_path = NULL;
 static bool cli_debug_log = false;
 static KeyMode keymode = {
 	.mode = {'d', 'e', 'f', 'a', 'u', 'l', 't', '\0'},
@@ -5016,10 +5015,6 @@ void keypressmod(struct wl_listener *listener, void *data) {
 
 	if (!group->keyboard->xkb_state)
 		return;
-
-	uint32_t cur_mods = wlr_keyboard_get_modifiers(&group->wlr_group->keyboard);
-	if (cur_mods == 0)
-		mod_key_used = false;
 
 	if (!mango_im_keyboard_grab_forward_modifiers(group)) {
 

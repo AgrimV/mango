@@ -649,8 +649,6 @@ void parse_bind_flags(const char *str, KeyBinding *kb) {
 		case 'p':
 			kb->ispassapply = true;
 			break;
-		case 'e':
-			kb->isexclusiveapply = true;
 		case 'c':
 			kb->isallowconflict = true;
 		case 'e':
